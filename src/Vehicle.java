@@ -43,4 +43,17 @@ public class Vehicle {
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
     }
+
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "numberOfWheels=" + numberOfWheels +
+                ", color='" + color + '\'' +
+                ", engineSize=" + engineSize +
+                ", fuelType='" + fuelType + '\'' +
+                '}';
+    }
+
+
 }

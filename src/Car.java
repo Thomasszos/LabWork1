@@ -7,16 +7,24 @@ public class Car extends Vehicle{
         this.brand = brand;
     }
 
-    private void honk(){
+    public void honk(){
         System.out.println("Honk, honk!");
     }
 
-    private void displayInfo(){
+    public void displayInfo(){
         System.out.println(
                 "Number of Wheels " + getNumberOfWheels()
                 + " Brand: " + brand + "Color" + getColor()
                 + " Engine Size " + getEngineSize()
                 + " Fuel Type " + getFuelType()
         );
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 }
